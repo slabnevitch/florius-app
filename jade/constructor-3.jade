@@ -1,0 +1,171 @@
+extends _misc/main-constructor
+
+block title
+	| Конструктор шаг-3
+
+block steps
+	a(href="#").constructor-step.constructor-step--completed.constructor-step--completed-first
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('forms-select')
+		.constructor-step__name Выбор 
+			br
+			| формы
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--completed.constructor-step--completed-last
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('image')
+		.constructor-step__name Работа
+			br
+			| с макетом
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--current
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('budget')
+		.constructor-step__name Количество, 
+			br
+			| стоимость
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('parfume')
+		.constructor-step__name Выбор 
+			br
+			| ароматов 
+		.constructor-step__arrow
+			+icon('constr-arrow')
+	
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('shopping-form')
+		.constructor-step__name Корзина 
+			br
+			| заказов
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('bill')
+		.constructor-step__name Оформление 
+			br
+			| заказа
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+block content
+	.constructor__step.constructor__step-3
+		.container.constructor-volume.constructor__no-pd-480
+			.constructor-volume__left
+				.constructor-selected.constructor-selected__front
+					.constructor-selected__title 1 сторона
+					.constructor-selected__img
+						img.constructor-selected__contour(src="img/constructor-forms/bare-frame.png", alt="alt")
+						img.constructor-selected__art(src="img/constructor-forms/vector.jpg", alt="alt")
+				
+				.constructor-selected.constructor-selected__back
+					.constructor-selected__title 2 сторона
+					.constructor-selected__img
+						img.constructor-selected__contour(src="img/constructor-forms/bare-frame.png", alt="alt")
+						img.constructor-selected__art(src="img/constructor-forms/vector.jpg", alt="alt")
+
+			.constructor-volume__right
+				.constructor-volume__row
+					.constructor-volume__key Количество:
+					.constructor-volume__select-wrap(title="Вы можете выбрать <br>список с определенным <br>шагом (100 или 250 шт.)")
+						select.constructor-select(name="")
+							option(value="") 100 шт
+							option(value="") 200 шт
+							option(value="") 300 шт
+
+				.constructor-volume__row
+					.constructor-volume__key Цена:
+					.constructor-volume__val 100 руб
+
+				.constructor-volume__row
+					.constructor-volume__key Стоимость:
+					.constructor-volume__val 10 000 руб
+
+				.constructor-volume__row
+					.constructor-volume__key Срок изготовления:
+					.constructor-volume__val от 5 дней
+
+		.container.constructor__table-wrap.constructor__no-pd-480
+			.constructor__cont-table
+				table
+					thead
+						tr
+							th Количество
+								span штук
+
+							th Стоимость
+								span за 1 шт, вкл НДС, #[span.ruble Р]
+
+					tbody
+						tr
+							td 100
+							td 64 - 35 #[span.ruble Р] #[span.constructor-table-action Акция]
+
+						tr
+							td 250
+							td 32 - 18 #[span.ruble Р] #[span.constructor-table-action Акция]
+
+						tr
+							td 500
+							td 18 - 16 #[span.ruble Р] #[span.constructor-table-action Акция]
+
+						tr
+							td 1000
+							td 15 - 14 #[span.ruble Р] #[span.constructor-table-action Акция]
+
+						tr
+							td 3 000
+							td 12
+
+						tr
+							td 5 000
+							td 10.5
+
+						tr
+							td 10 000
+							td 9.4
+
+						tr
+							td 20 000
+							td 8.8
+
+						tr
+							td 50 000
+							td 7.8
+
+						tr
+							td 100 000
+							td 7.3
+
+						tr
+							td от 100 000
+							td Договорная
+
+		.container.constructor__bottom-buttons
+			a(href="#").button-constr.button-constr--gray.button--constr-bottom.step-to-backward Вернуться на шаг назад
+			a(href="#").button-constr.button-constr--accent.button--constr-bottom.step-to-forward Выбрать количество и стоимость
+
+
+

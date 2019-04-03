@@ -1,0 +1,11 @@
+.air-ctm__slider{
+	width: 100%;
+	margin-top: 40px;
+
+	.slick-dots{
+		// display: none !important;
+	}
+}
+.air-ctm__slide{
+	@extend .portfolio-slide;
+}

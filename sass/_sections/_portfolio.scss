@@ -1,0 +1,102 @@
+.portfolio-links{
+	margin-top: 60px;
+	justify-content: center;
+	.button--empty{
+		margin: 0 5px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		font-family: $rob-b;
+
+		&:hover, &:active{
+			border-color: transparent;
+		}
+		
+	}
+}
+.portfolio-slider{
+	width: 100%;
+	margin-top: 45px;
+	
+	.slick-dots{
+		bottom: -60px;
+	}
+}
+.portfolio-slide{
+	text-align: center;
+	img{
+		display: inline-block;
+	}
+}
+.slick-prev, .slick-next{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: 1px solid $line-gray;
+
+	background:  url(../img/icons-svg/chev-left.svg) center no-repeat;
+	background-size: 20%;
+	z-index: 5;
+
+	&:before{
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.slick-next{
+	background-image: url(../img/icons-svg/chev-right.svg);
+}
+.slick-dots{
+	// @include absolute-center;
+	top: 	auto;
+	width: auto;
+	bottom: -255px;
+	padding: 0 9px;
+	border: 2px solid #F0F0F0;
+	border-radius: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+}
+.slick-dots li{
+	margin: 0 5px;
+	width: auto;
+	// height: 29px;
+}
+.slick-dots li button{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #E8EBEC;
+}
+.slick-dots li button::before{
+	font-size: 49px;
+	display: none;
+}
+.slick-dots li.slick-active button{
+	// color: $accent;
+	background-color: $accent;
+
+}
+
+.portfolio-slider, .air-ctm__slider{
+	.slick-dots{
+		padding-top: 5px;
+		// padding-bottom: 5px;
+		li{
+			vertical-align: middle;
+			button{
+				// width: 20px;
+				// height: 20px;
+			}
+		}
+	}
+}
+.air-ctm__slider{
+	.slick-dots{
+		bottom: -141px;
+	}
+}

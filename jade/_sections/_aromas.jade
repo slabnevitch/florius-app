@@ -1,0 +1,77 @@
+section.aromas
+	.container
+		.title-wrapper
+			h2 Ароматы
+			p.sect-descr В нашей палитре более 20 популярных ароматов. Выбирайте подходящий вам вариант!
+
+	.container.no-paddings
+		- var aromas = [{name: 'АнтиТабак', loc: 'anti-tobaco' }, {name: 'Яблоко', loc: 'apples'}, {name: 'Яблоко-Корица', loc: 'apple-cor'}, {name: 'БАблГам', loc: 'bubblegum'}, {name: 'Кола', loc: 'cola'}, {name: 'Парфюм', loc: 'parfum'}, {name: 'Парфюм Хьюго Босс', loc: 'hugo-boss'}, {name: 'Зеленый Лес', loc: 'green-wood'}, {name: 'Лесная Ягода', loc: 'berry'}, {name: 'Грейпфрут', loc: 'GrapeFruit'}, {name: 'Грейпфрутовый зеленый чай', loc: 'GrapeFruit'}, {name: 'Лимон', loc: 'lemon'}, {name: 'Дыня', loc: 'melon'}, {name: 'Парфюм Гертруда', loc: 'melon'}, {name: 'Новая Машина', loc: 'new-car'}, {name: 'Океан', loc: 'ocean'}, {name: 'Апельсин', loc: 'orange'}, {name: 'Кофе', loc: 'coffee'}, {name: 'ПинаКолада', loc: 'pina'}, {name: 'Клубника', loc: 'strawberry'}, {name: 'ПарфюмВодопад', loc: 'waterfall'}, {name: 'Кофе-Ваниль', loc: 'coffee-vanilla'}, {name: 'УтренняяСвежесть', loc: 'morning-fresh'}, {name: 'Ваниль', loc: 'vanilla'}, {name: 'Яблоко', loc: 'apples'}, {name: 'Лесная Ягода', loc: 'berry'}, {name: 'Кофе', loc: 'coffee'}, {name: 'ПарфюмЯрость', loc: 'rage'}];
+		each val, index in aromas
+			- if(index < 6)
+				.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+					.aromas-item__bottom
+						span= val.name
+
+		.aromas-item(style="background-image: url(img/aromas/hugo-boss.jpg)")
+			.aromas-item__bottom
+				span Парфюм 
+					br
+					| Хьюго Босс
+
+		each val, index in aromas
+			- if(index > 6 && index < 10)
+				.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+					.aromas-item__bottom
+						span= val.name
+
+		.aromas-item(style="background-image: url(img/aromas/green-tea.jpg)")
+			.aromas-item__bottom
+				span Грейпфрутовый
+					br
+					| зеленый чай
+
+		each val, index in aromas
+			- if(index > 10 && index < 13)
+				.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+					.aromas-item__bottom
+						span= val.name
+		
+		.aromas-item(style="background-image: url(img/aromas/gertruda.jpg)")
+			.aromas-item__bottom
+				span Парфюм
+					br
+					| Гертруда
+
+		each val, index in aromas
+			- if(index > 13 && index < 20)
+				.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+					.aromas-item__bottom
+						span= val.name
+
+		.aromas-item(style="background-image: url(img/aromas/waterfall.jpg)")
+			.aromas-item__bottom
+				span Парфюм
+					br
+					| Водопад
+
+		.aromas-item(style="background-image: url(img/aromas/coffe-vanilla.jpg)")
+			.aromas-item__bottom
+				span Кофе-Ваниль
+
+		.aromas-item(style="background-image: url(img/aromas/morning-fresh.jpg)")
+			.aromas-item__bottom
+				span Утренняя
+					br
+					| Свежесть
+
+		each val, index in aromas
+			- if(index > 22 && index < 27)
+				.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+					.aromas-item__bottom
+						span= val.name
+
+		.aromas-item(style="background-image: url(img/aromas/rage.jpg)")
+			.aromas-item__bottom
+				span Парфюм
+					br
+					| Ярость

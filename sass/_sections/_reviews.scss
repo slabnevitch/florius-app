@@ -1,0 +1,17 @@
+.reviews{
+	h2{
+		@include col();
+		@include col-12();
+	}
+	&-item{
+		@include col();
+		@include col-3();
+		@include col-md-4();
+		@include col-sm-6();
+		@include col-xs-12();
+		text-align: center;
+		img{
+			max-width: 100%;
+		}
+	}
+}

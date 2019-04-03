@@ -1,0 +1,57 @@
+footer.footer
+	.footer-top
+		.container
+			.footer-item
+				.footer-item__title Каталог продукции
+				- var ftems1 = ['Специальные предложения', 'Серийные ароматизаторы', 'Рекламные ароматизаторы', 'Ароматизаторы с собственной торговой маркой'];
+				ul
+					each item in ftems1
+						li
+								a(href="#")= item
+				.footer-socials
+					a(href="#").footer-socials__item
+							+icon('yt')
+
+					a(href="#").footer-socials__item
+							+icon('vk')
+
+			.footer-item
+				.footer-item__title Компания
+				- var ftems2 = ['О нас', 'Отзывы', 'Сертификаты и патенты', 'Контакты'];
+				ul
+					each item in ftems2
+						li
+								a(href="#")= item
+
+			.footer-item
+				.footer-item__title Покупателям
+				- var ftems3 = ['Личный кабинет', 'Оплата и доставка', 'Гарантии', 'Примеры работ', 'Условия предоставления услуг'];
+				ul
+					each item in ftems3
+						li
+								a(href="#")= item
+
+			.footer-item
+				.footer-item__title Помощь
+				- var ftems4 = ['Требования к макетам', 'Как заказать?', 'Вопросы-ответы', 'Статьи', 'Карта сайта'];
+				ul
+					each item in ftems4
+						li
+								a(href="#")= item
+
+			.footer-item.footer-item--phones
+				.footer__main-phone  8 800 777 4037
+				- var phones = [{loc: 'Москва', num: '+7 495 798 2808'}, {loc: 'Минск', num: '+375 17 392 3718'}, {loc: 'Алма-Ата', num: '+7 727 349 5631'}, {loc: 'Санкт-Петербург', num: '+7 812 642 0585'}, {loc: 'Новосибирск', num: '+7 383 292 0273'}, {loc: 'Тюмень', num: '+7 919 949 9472'}, {loc: 'Челябинск', num: '+7 922 013 185'}, {loc: 'Краснодар', num: '+7 861 290 5545 '},];
+				
+				each phone in phones
+					.footer-phone
+						.footer__city= phone.loc
+						.footer__number= phone.num
+	
+	.footer-bottom
+		.container
+			.footer-bottom__text
+				p Флориус, Производство автомобильных ароматизаторов.  © 1992-2018. Все права защищены
+				a(href="#") Политика конфиденциальности
+
+			a(href="#callback-form").button.button--empty.button--bold.button--accent.button-popup Обратный звонок

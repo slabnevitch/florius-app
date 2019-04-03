@@ -1,0 +1,21 @@
+.video{
+	padding-bottom: 80px;
+	background: url(../img/bg_video.jpg) 0 0 no-repeat;
+	background-size: cover;
+
+
+}
+.video-text{
+	@extend .main-slider__block;
+}
+.video-title{
+	@extend .main-slider__slide-title;
+	margin-top: 0;
+}
+.video-price{
+	@extend .main-slider__price;
+}
+.video-play{
+	@include absolute-center;
+	cursor: pointer;
+}

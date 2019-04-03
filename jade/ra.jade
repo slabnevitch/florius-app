@@ -1,0 +1,221 @@
+extends _misc/main-ra
+
+block title
+	| Рекламные ароматизаторы
+
+block content
+	include _sections/_video
+	include _sections/_price
+	include _sections/_forms
+	section.aromas.sect-gray
+		.container
+			.title-wrapper
+				h2 Ароматы
+				p.sect-descr В нашей палитре более 20 популярных ароматов. Выбирайте подходящий вам вариант!
+
+		.container.no-paddings
+			- var aromas = [{name: 'АнтиТабак', loc: 'anti-tobaco' }, {name: 'Яблоко', loc: 'apples'}, {name: 'Яблоко-Корица', loc: 'apple-cor'}, {name: 'БАблГам', loc: 'bubblegum'}, {name: 'Кола', loc: 'cola'}, {name: 'Парфюм', loc: 'parfum'}, {name: 'Парфюм Хьюго Босс', loc: 'hugo-boss'}, {name: 'Зеленый Лес', loc: 'green-wood'}, {name: 'Лесная Ягода', loc: 'berry'}, {name: 'Грейпфрут', loc: 'GrapeFruit'}, {name: 'Грейпфрутовый зеленый чай', loc: 'GrapeFruit'}, {name: 'Лимон', loc: 'lemon'}, {name: 'Дыня', loc: 'melon'}, {name: 'Парфюм Гертруда', loc: 'melon'}, {name: 'Новая Машина', loc: 'new-car'}, {name: 'Океан', loc: 'ocean'}, {name: 'Апельсин', loc: 'orange'}, {name: 'Кофе', loc: 'coffee'}, {name: 'ПинаКолада', loc: 'pina'}, {name: 'Клубника', loc: 'strawberry'}, {name: 'ПарфюмВодопад', loc: 'waterfall'}, {name: 'Кофе-Ваниль', loc: 'coffee-vanilla'}, {name: 'УтренняяСвежесть', loc: 'morning-fresh'}, {name: 'Ваниль', loc: 'vanilla'}, {name: 'Яблоко', loc: 'apples'}, {name: 'Лесная Ягода', loc: 'berry'}, {name: 'Кофе', loc: 'coffee'}, {name: 'ПарфюмЯрость', loc: 'rage'}];
+			each val, index in aromas
+				- if(index < 6)
+					.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+						.aromas-item__bottom
+							span= val.name
+
+			.aromas-item(style="background-image: url(img/aromas/hugo-boss.jpg)")
+				.aromas-item__bottom
+					span Парфюм 
+						br
+						| Хьюго Босс
+
+			each val, index in aromas
+				- if(index > 6 && index < 10)
+					.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+						.aromas-item__bottom
+							span= val.name
+
+			.aromas-item(style="background-image: url(img/aromas/green-tea.jpg)")
+				.aromas-item__bottom
+					span Грейпфрутовый
+						br
+						| зеленый чай
+
+			each val, index in aromas
+				- if(index > 10 && index < 13)
+					.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+						.aromas-item__bottom
+							span= val.name
+			
+			.aromas-item(style="background-image: url(img/aromas/gertruda.jpg)")
+				.aromas-item__bottom
+					span Парфюм
+						br
+						| Гертруда
+
+			each val, index in aromas
+				- if(index > 13 && index < 20)
+					.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+						.aromas-item__bottom
+							span= val.name
+
+			.aromas-item(style="background-image: url(img/aromas/waterfall.jpg)")
+				.aromas-item__bottom
+					span Парфюм
+						br
+						| Водопад
+
+			.aromas-item(style="background-image: url(img/aromas/coffe-vanilla.jpg)")
+				.aromas-item__bottom
+					span Кофе-Ваниль
+
+			.aromas-item(style="background-image: url(img/aromas/morning-fresh.jpg)")
+				.aromas-item__bottom
+					span Утренняя
+						br
+						| Свежесть
+
+			each val, index in aromas
+				- if(index > 22 && index < 27)
+					.aromas-item(style="background-image: url(img/aromas/" + val.loc + ".jpg)")
+						.aromas-item__bottom
+							span= val.name
+
+			.aromas-item(style="background-image: url(img/aromas/rage.jpg)")
+				.aromas-item__bottom
+					span Парфюм
+						br
+						| Ярость
+	
+	section.portfolio.lined
+		.container.no-paddings
+			.title-wrapper
+				h2 Мы гордимся своими клиентами и своим портфолио
+				p.sect-descr
+					| Картонный ароматизатор с рекламой для машины успешно зарекомендовал себя на рекламном рынке. Этот действенный способ уже давно используется компаниями из разных сфер деятельности. В числе наших заказчиков «Лукойл», «Сибнефть», «МегаФон», «МТС», «Скайлинк», «Кока-кола», «Пепси-кола», «Нестле», «Наше Радио», «АвтоРадио» и многие другие. Оцените и вы эффективность этого способа рекламы, став нашим клиентом.
+
+		.container.rel
+			.portfolio-slider
+				.portfolio-slide
+					img(src="img/portfolio/pfolio-1.jpg", alt="alt")
+				.portfolio-slide
+					img(src="img/portfolio/pfolio-2.jpg", alt="alt")
+				.portfolio-slide
+					img(src="img/portfolio/pfolio-3.jpg", alt="alt")
+				.portfolio-slide
+					img(src="img/portfolio/pfolio-4.jpg", alt="alt")
+				.portfolio-slide
+					img(src="img/portfolio/pfolio-5.jpg", alt="alt")
+
+
+				.portfolio-slide
+					img(src="img/portfolio/pfolio-1.jpg", alt="alt")
+		
+		.container.portfolio-links
+			a(href="#").button.button--yellow.button--bold Посмотреть все наши работы и кейсы
+			//- a(href="#").button.button--empty Посмотреть кейсы
+
+	section.action
+		.container
+			.title-wrapper
+				h2.text-center Акция
+				p.sect-descr.text-center
+					| на рекламные ароматизаторы "Классика"
+
+		.container
+			.action-left
+				p При использовании данных форм, стоимость одного ароматизатора составит:
+				.actions-price
+					.actions-price__row
+						span 250 шт. -
+						span.actions-price__old 32 #[span.ruble Р]
+						span.actions-price__new 18 #[span.ruble Р]
+						span за шт.
+
+					.actions-price__row
+						span 500 шт. -
+						span.actions-price__old 18 #[span.ruble Р]
+						span.actions-price__new 16 #[span.ruble Р]
+						span за шт.
+
+			.action-right
+				.action-tumbs
+					img(src="img/forms/act-form-1.jpg", alt="alt")
+					img(src="img/forms/act-form-2.jpg", alt="alt")
+					img(src="img/forms/act-form-3.jpg", alt="alt")
+
+				.actions-right__bottom
+					a(href="#").button.button--bold.button--yellow Скачать формы по акции
+
+		.container.action-bottom
+			a(href="#").button.button--yellow.button--bold Скачать остальные 1 500 форм, не участвующие в акции
+			p *Персональные скидки не распространяются на акцию
+
+	include _sections/_how-to-order
+	include _sections/_guarantee
+	include _sections/_map-no-side
+	include _sections/_management
+	include _sections/_collective-no-side
+	include _sections/_fabrication-no-side
+	include _sections/_reviews
+	section.docs.lined
+		.container
+			.title-wrapper
+				h2 Наша продукция имеет всю необходимую документацию,
+					br
+					| а наши разработки защищены патентами.
+
+				p.sect-descr
+					| Мы уважаем своих клиентов и соблюдаем закон, поэтому открыто предоставляем всю необходимую информацию, касающуюся качества и безопасности ароматизаторов в машину, которые вы приобретаете. Кроме того, мы обладаем уникальными авторскими правами на изготовление автомобильных ароматизаторов с логотипом. Вы не только можете быть абсолютно уверены в высоком качестве и безопасности освежителя для машины, но и совершенно спокойно предлагать этот товар своим клиентам. 
+
+		.container
+			.docs-left
+				img(src="img/docs/doc-2.png", alt="alt")
+				img(src="img/docs/doc-3.png", alt="alt")
+				//- img(src="img/docs/doc-4.png", alt="alt")
+				span Разрешающая документация
+
+				.docs-left__button-wrap
+					a(href="#").button.button--yellow.button--bold Скачать
+			
+			.docs-right
+				.docs-slider
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+				span Патенты
+		
+	section.docs-reasons
+		.container
+			.title-wrapper
+				h2 У вас есть по меньшей мере
+					br
+					| 6 причин для сотрудничества с нами
+		.container.no-paddings
+			- var reasons = ['Самое оптимальное соотношение цены и качества на современном рынке', 'Кратчайшие сроки изготовления ваших автоароматизаторов с логотипом на заказ', 'Возможность создания вместе с нами уникального продукта, презентующего вашу марку', 'Гарантированная безопасность и качество продукта, подтвержденные документально', 'Практически неограниченный объем заказа', 'Широкий выбор готовых освежителей для машины с логотипом'];
+			each val in reasons
+				.docs-reasons__item
+					.docs-reasons__icon
+						+icon('checkmark')
+					p= val
+
+
+	include _sections/_delivery-features
+	section.doubt
+		.container
+			.title-wrapper
+				h2.text-center Все еще сомневаетесь?
+		.container.doubt-wrap.text-center
+			img(src="img/doubt.jpg", alt="alt")
+		.container.no-paddings
+			.doubt-order.text-center
+				span Закажите образцы нашей продукции - 
+				span.doubt-yell это #[span бесплатно]
+
+			.doubt-button.text-center
+				a(href="#").button.button--bold.button--yellow Получить образцы
+
+	include _sections/_overal-questions

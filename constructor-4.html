@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конструктор шаг-4</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="js/libs/revealator/fm.revealator.jquery.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Здесь пишем код-->
+    <aside>
+      <div class="sidebar-green"><a href="#" class="toggle-mnu"><span></span></a></div>
+      <ul class="sidebar-menu green-menu">
+        <li class="menu-item"><a href="#" class="menu-link">Цены и сроки</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Ароматы</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Техн. требования</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Как заказать</a></li>
+      </ul>
+      <ul class="sidebar-menu main-menu">
+        <li class="menu-item"><a href="#" class="menu-link">Рекламные Ароматизаторы</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Серийные Ароматизаторы</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">CTM Ароматизаторы</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Получить образцы</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+      </ul>
+      <ul class="sidebar-menu additionally-menu">
+        <li class="menu-item"><a href="#" class="menu-link">Доставка и оплата</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Гарантии</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">О компании</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Портфолио</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Обратная связь</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Как заказать</a></li>
+      </ul>
+    </aside>
+    <div class="main-content">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <nav><a href="#">Доставка и оплата</a><a href="#">Гарантии</a><a href="#">О компании</a><a href="#">Портфолио</a><a href="#">Обратная связь</a><a href="#">Как заказать</a>
+            </nav>
+            <div class="header-lang"><a href="#" class="header-lang__active">Ru</a><a href="">En</a></div><a href="#callback-form" class="button button--green button--empty button--bold button-popup">Обратный звонок</a>
+          </div>
+        </div>
+        <div class="container header-middle">
+          <div class="header-logo"><img src="img/florius-logo-244x85.png" alt="alt" class="header-logo__noscroll"><img src="img/logo-scroll.png" alt="alt" class="header-logo__scroll">
+          </div>
+          <div class="header-descr">Российское производство автомобильных 
+            <div>ароматизаторов<span>, продажа готовых и на заказ</span></div>
+          </div>
+          <div class="header-contacts">
+            <div class="loc-list"><span data-tooltip-content="#loc-tooltip_content" class="loc-tooltip">Санкт-Петербург
+                    <svg class="icon icon-chev-down ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                    </svg></span></div>
+            <div class="header-phones">
+              <div>8 800 234 54 65</div>
+              <div>+7 495 798 2808</div>
+            </div>
+            <p>По будням с 9:00 до 18:00</p>
+          </div>
+        </div>
+        <div class="header-yellow header-yellow--constructor">
+          <div class="container"><a href="#" class="toggle-mnu"><span></span></a>
+            <div class="constructor-steps"><a href="#" class="constructor-step constructor-step--completed constructor-step--completed-first">
+                <div class="constructor-step__arrow constructor-step__arrow--to-back">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__icon">
+                      <svg class="icon icon-forms-select ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#forms-select"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__name">Выбор <br>формы</div>
+                <div class="constructor-step__arrow">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div></a><a href="#" class="constructor-step constructor-step--completed">
+                <div class="constructor-step__arrow constructor-step__arrow--to-back">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__icon">
+                      <svg class="icon icon-image ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#image"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__name">Работа<br>с макетом</div>
+                <div class="constructor-step__arrow">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div></a><a href="#" class="constructor-step constructor-step--completed constructor-step--completed-last">
+                <div class="constructor-step__arrow constructor-step__arrow--to-back">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__icon">
+                      <svg class="icon icon-budget ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#budget"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__name">Количество, <br>стоимость</div>
+                <div class="constructor-step__arrow">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div></a><a href="#" class="constructor-step constructor-step--current">
+                <div class="constructor-step__arrow constructor-step__arrow--to-back">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__icon">
+                      <svg class="icon icon-parfume ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#parfume"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__name">Выбор <br>ароматов </div>
+                <div class="constructor-step__arrow">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div></a><a href="#" class="constructor-step">
+                <div class="constructor-step__arrow constructor-step__arrow--to-back">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__icon">
+                      <svg class="icon icon-shopping-form ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#shopping-form"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__name">Корзина <br>заказов</div>
+                <div class="constructor-step__arrow">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div></a><a href="#" class="constructor-step">
+                <div class="constructor-step__arrow constructor-step__arrow--to-back">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__icon">
+                      <svg class="icon icon-bill ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#bill"></use>
+                      </svg>
+                </div>
+                <div class="constructor-step__name">Оформление <br>заказа</div>
+                <div class="constructor-step__arrow">
+                      <svg class="icon icon-constr-arrow ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#constr-arrow"></use>
+                      </svg>
+                </div></a></div>
+          </div>
+        </div>
+      </header>
+      <div class="constructor__step constructor__step-4">
+        <div class="container constructor-volume constructor__no-pd-480">
+          <div class="constructor-volume__left">
+            <div class="constructor-selected constructor-selected__front">
+              <div class="constructor-selected__title">1 сторона</div>
+              <div class="constructor-selected__img"><img src="img/constructor-forms/bare-frame.png" alt="alt" class="constructor-selected__contour"><img src="img/constructor-forms/vector.jpg" alt="alt" class="constructor-selected__art"></div>
+            </div>
+            <div class="constructor-selected constructor-selected__back">
+              <div class="constructor-selected__title">2 сторона</div>
+              <div class="constructor-selected__img"><img src="img/constructor-forms/bare-frame.png" alt="alt" class="constructor-selected__contour"><img src="img/constructor-forms/vector.jpg" alt="alt" class="constructor-selected__art"></div>
+            </div>
+          </div>
+          <div class="constructor-volume__right">
+            <p class="constructor-volume__descr">При выбранном количестве 1000 шт. вы можете выбрать до 4 ароматов. Изменить количество</p><a href="#" class="constructor-volume__count-change">Изменить количество</a>
+            <div class="constructor-volume__adding">
+              <label class="constructor-custom-label">
+                <input type="checkbox" name="" class="constructor-custom-checkbox"><span class="constructor-custom-check">
+                      <svg class="icon icon-formcheck ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#formcheck"></use>
+                      </svg></span><span class="constructor-custom-label__text">Усиленный аромат</span><span class="constructor-help">
+                      <svg class="icon icon-help ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#help"></use>
+                      </svg></span>
+              </label>
+              <div class="constructor__action-label">+3<span class="ruble">Р</span> за штуку</div>
+            </div>
+          </div>
+        </div>
+        <div class="container constructor-aromas constructor__no-pd-480">
+          <div class="constructor-aromas__column">
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+          </div>
+          <div class="constructor-aromas__column">
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+          </div>
+          <div class="constructor-aromas__column">
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+            <div class="constructor-aromas__row">
+              <div class="constructor-aromas__icon"><img src="img/constructor-forms/antitabak-01.svg" alt="alt"></div>
+              <div class="constructor-aromas__name">Антитабак</div>
+              <select name="" class="constructor-select">
+                <option value="">100 шт.</option>
+                <option value="">1 000 шт.</option>
+                <option value="">10 000 шт.</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="container constructor__bottom-buttons"><a href="#" class="button-constr button-constr--gray button--constr-bottom step-to-backward">Вернуться на шаг назад</a><a href="#" class="button-constr button-constr--accent button--constr-bottom step-to-forward">Выбрать количество и стоимость</a></div>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-item">
+              <div class="footer-item__title">Каталог продукции</div>
+              <ul>
+                <li><a href="#">Специальные предложения</a></li>
+                <li><a href="#">Серийные ароматизаторы</a></li>
+                <li><a href="#">Рекламные ароматизаторы</a></li>
+                <li><a href="#">Ароматизаторы с собственной торговой маркой</a></li>
+              </ul>
+              <div class="footer-socials"><a href="#" class="footer-socials__item">
+                      <svg class="icon icon-yt ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#yt"></use>
+                      </svg></a><a href="#" class="footer-socials__item">
+                      <svg class="icon icon-vk ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#vk"></use>
+                      </svg></a></div>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item__title">Компания</div>
+              <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Сертификаты и патенты</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item__title">Покупателям</div>
+              <ul>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Гарантии</a></li>
+                <li><a href="#">Примеры работ</a></li>
+                <li><a href="#">Условия предоставления услуг</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item__title">Помощь</div>
+              <ul>
+                <li><a href="#">Требования к макетам</a></li>
+                <li><a href="#">Как заказать?</a></li>
+                <li><a href="#">Вопросы-ответы</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Карта сайта</a></li>
+              </ul>
+            </div>
+            <div class="footer-item footer-item--phones">
+              <div class="footer__main-phone"> 8 800 777 4037</div>
+              <div class="footer-phone">
+                <div class="footer__city">Москва</div>
+                <div class="footer__number">+7 495 798 2808</div>
+              </div>
+              <div class="footer-phone">
+                <div class="footer__city">Минск</div>
+                <div class="footer__number">+375 17 392 3718</div>
+              </div>
+              <div class="footer-phone">
+                <div class="footer__city">Алма-Ата</div>
+                <div class="footer__number">+7 727 349 5631</div>
+              </div>
+              <div class="footer-phone">
+                <div class="footer__city">Санкт-Петербург</div>
+                <div class="footer__number">+7 812 642 0585</div>
+              </div>
+              <div class="footer-phone">
+                <div class="footer__city">Новосибирск</div>
+                <div class="footer__number">+7 383 292 0273</div>
+              </div>
+              <div class="footer-phone">
+                <div class="footer__city">Тюмень</div>
+                <div class="footer__number">+7 919 949 9472</div>
+              </div>
+              <div class="footer-phone">
+                <div class="footer__city">Челябинск</div>
+                <div class="footer__number">+7 922 013 185</div>
+              </div>
+              <div class="footer-phone">
+                <div class="footer__city">Краснодар</div>
+                <div class="footer__number">+7 861 290 5545 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__text">
+              <p>Флориус, Производство автомобильных ароматизаторов.  © 1992-2018. Все права защищены</p><a href="#">Политика конфиденциальности</a>
+            </div><a href="#callback-form" class="button button--empty button--bold button--accent button-popup">Обратный звонок</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="tooltip_templates">
+      <div id="map-tooltip_content" class="map-tooltip_content">
+        <div class="map-tooltip__loc">Москва</div><a href="#" class="map-tooltip__link">ул, Строителей 37/2</a>
+        <div class="map-tooltip__phone">8 800 344 55 66</div>
+      </div>
+      <div id="loc-tooltip_content" class="loc-tooltip-content">
+        <div class="loc-tooltip__top">
+          <div class="loc-tooltip__title">Выбор города</div><img src="img/icons/close.png" alt="alt" class="close-icon">
+        </div>
+        <div class="loc-tooltip__middle">
+          <label>
+            <input type="text" name="search" placeholder="Искать другой город">
+            <div class="search-icon"></div>
+          </label>
+        </div>
+        <div class="loc-bottom">
+          <ul>
+            <li><a href="#">Москва</a></li>
+            <li><a href="#">Минск</a></li>
+            <li><a href="#">Алма-Ата</a></li>
+            <li><a href="#">Санкт-Петербург</a></li>
+            <li><a href="#">Новосибирск</a></li>
+            <li><a href="#">Тюмень</a></li>
+            <li><a href="#">Челябинск</a></li>
+            <li><a href="#">Краснодар</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="body-cover"></div>
+    <form id="callback-form" class="callback-form mfp-hide white-popup-block">
+      <div class="callback-form__title text-center">МЫ ПЕРЕЗВОНИМ ВАМ!</div>
+      <div class="callback-form__body">
+        <input type="text" name="name" placeholder="ФИО">
+        <input type="text" name="phone" placeholder="Телефон">
+        <input type="text" name="email" placeholder="E-mail">
+      </div>
+      <button type="submit" class="button button--bold button--animated">Перезвоните мне</button>
+    </form>
+    <script src="js/libs.min.js"></script>
+    <script src="js/libs/ikselect/jquery.ikSelect.min.js"></script>
+    
+    <script src="js/common.js"></script>
+    <script src="js/constructor.js"></script>
+    <script src="js/libs/svg4everybody/svg4everybody.min.js" async onload="svg4everybody();"></script>
+  </body>
+</html>

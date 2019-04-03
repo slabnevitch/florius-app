@@ -1,0 +1,58 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		title
+			block title
+		meta(name='description', content='')
+		link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+		link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='stylesheet', href='css/main.css')
+		
+	body
+		// Здесь пишем код
+		include _mixins
+		
+		include ../_sections/_mob-menu-ra
+
+		.main-content
+			include ../_sections/_header-green-ra
+
+			block content
+			include ../_sections/_footer
+			
+		.tooltip_templates
+			#map-tooltip_content.map-tooltip_content
+				.map-tooltip__loc Москва
+				a(href="#").map-tooltip__link ул, Строителей 37/2
+				.map-tooltip__phone 8 800 344 55 66
+
+			#loc-tooltip_content.loc-tooltip-content
+				.loc-tooltip__top
+					.loc-tooltip__title Выбор города
+					img(src="img/icons/close.png", alt="alt").close-icon
+				.loc-tooltip__middle
+					label
+						input(type="text", name="search" placeholder="Искать другой город")
+						.search-icon
+				.loc-bottom
+					- var citys = ['Москва', 'Минск', 'Алма-Ата', 'Санкт-Петербург', 'Новосибирск', 'Тюмень', 'Челябинск', 'Краснодар'];
+					ul
+						each val in citys
+							li
+								a(href="#")= val
+					//- .loc-bottom__left
+					//- 	a*
+					//- .loc-bottom__right
+
+		.body-cover
+		
+		include ../_sections/_call-popup
+
+		script(src='js/libs.min.js')
+
+		script(src='js/common.js')

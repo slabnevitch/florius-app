@@ -1,0 +1,25 @@
+aside
+	- var menuItems1 = ['Рекламные Ароматизаторы', 'Серийные Ароматизаторы', 'CTM Ароматизаторы', 'Получить образцы', 'Контакты'];
+
+	- var menuItems2 = ['Доставка и оплата', 'Гарантии', 'О компании', 'Портфолио', 'Обратная связь', 'Как заказать'];
+
+	- var menuItems3 = ['Цены и сроки', 'Ароматы', 'Техн. требования', 'Как заказать'];
+	
+	.sidebar-green
+		a(href="#").toggle-mnu
+			span
+
+	ul.sidebar-menu.green-menu
+		each val in menuItems3
+			li.menu-item
+				a.menu-link(href="#")=val
+
+	ul.sidebar-menu.main-menu
+		each val in menuItems1
+			li.menu-item
+				a.menu-link(href="#")=val
+	
+	ul.sidebar-menu.additionally-menu
+		each val in menuItems2
+			li.menu-item
+				a.menu-link(href="#")=val

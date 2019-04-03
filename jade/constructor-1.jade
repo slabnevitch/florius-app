@@ -1,0 +1,115 @@
+extends _misc/main-constructor
+
+block title
+	| Конструктор шаг-1
+
+block steps
+	a(href="#").constructor-step.constructor-step--current
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('forms-select')
+		.constructor-step__name Выбор 
+			br
+			| формы
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('image')
+		.constructor-step__name Работа
+			br
+			| с макетом
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('budget')
+		.constructor-step__name Количество, 
+			br
+			| стоимость
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('parfume')
+		.constructor-step__name Выбор 
+			br
+			| ароматов 
+		.constructor-step__arrow
+			+icon('constr-arrow')
+	
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('shopping-form')
+		.constructor-step__name Корзина 
+			br
+			| заказов
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('bill')
+		.constructor-step__name Оформление 
+			br
+			| заказа
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+block content
+	.constructor__step.constructor__step-1
+		.container
+			.title-wrapper.title-wrapper--constructor
+				.constructor-dd-block
+					.constructor-dd-label Выбрать из списка:
+					select.constructor-select(name="")
+						option(value="") Акция
+						option(value="") Акция
+						option(value="") Акция
+
+		.container.constructor-variants
+			.constructor-variants__slider
+				- for (var i= 0; i < 3; i++)
+					.constructor-variant.revealator-slideright.revealator-once.revealator-delay1
+						.constructor-variant__title Форма №17 
+							div Размер 55х55 мм
+						.constructor-variant__form
+							img(src="img/constructor-forms/circle.svg", alt="alt")
+
+						a(href="#").button-constr.button-constr--green Выбрать
+
+					.constructor-variant.revealator-slideright.revealator-once.revealator-delay2
+						.constructor-variant__title Форма №17 
+							div Размер 55х55 мм
+						.constructor-variant__form
+							img(src="img/constructor-forms/rect.svg", alt="alt")
+
+						a(href="#").button-constr.button-constr--green Выбрать
+
+					.constructor-variant.revealator-slideright.revealator-once.revealator-delay3
+						.constructor-variant__title Форма №17 
+							div Размер 55х55 мм
+						.constructor-variant__form
+							img(src="img/constructor-forms/romb.svg", alt="alt")
+
+						a(href="#").button-constr.button-constr--green Выбрать
+
+block myscripts
+	script(src="js/libs/revealator/fm.revealator.jquery.min.js")
+	script.
+		Revealator.effects_padding = '-300';
+

@@ -1,0 +1,130 @@
+extends _misc/main-constructor
+
+block title
+	| Конструктор шаг-4
+
+block steps
+	a(href="#").constructor-step.constructor-step--completed.constructor-step--completed-first
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('forms-select')
+		.constructor-step__name Выбор 
+			br
+			| формы
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--completed
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('image')
+		.constructor-step__name Работа
+			br
+			| с макетом
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--completed.constructor-step--completed-last
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('budget')
+		.constructor-step__name Количество, 
+			br
+			| стоимость
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--current
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('parfume')
+		.constructor-step__name Выбор 
+			br
+			| ароматов 
+		.constructor-step__arrow
+			+icon('constr-arrow')
+	
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('shopping-form')
+		.constructor-step__name Корзина 
+			br
+			| заказов
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('bill')
+		.constructor-step__name Оформление 
+			br
+			| заказа
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+block content
+	.constructor__step.constructor__step-4
+		.container.constructor-volume.constructor__no-pd-480
+			.constructor-volume__left
+				.constructor-selected.constructor-selected__front
+					.constructor-selected__title 1 сторона
+					.constructor-selected__img
+						img.constructor-selected__contour(src="img/constructor-forms/bare-frame.png", alt="alt")
+						img.constructor-selected__art(src="img/constructor-forms/vector.jpg", alt="alt")
+				
+				.constructor-selected.constructor-selected__back
+					.constructor-selected__title 2 сторона
+					.constructor-selected__img
+						img.constructor-selected__contour(src="img/constructor-forms/bare-frame.png", alt="alt")
+						img.constructor-selected__art(src="img/constructor-forms/vector.jpg", alt="alt")
+
+			.constructor-volume__right
+				p.constructor-volume__descr При выбранном количестве 1000 шт. вы можете выбрать до 4 ароматов. Изменить количество
+
+				a(href="#").constructor-volume__count-change Изменить количество
+
+				.constructor-volume__adding
+					label.constructor-custom-label
+						input.constructor-custom-checkbox(type="checkbox", name="")
+						span.constructor-custom-check
+							+icon('formcheck')
+						span.constructor-custom-label__text Усиленный аромат
+						span.constructor-help
+							+icon('help')
+
+					.constructor__action-label +3#[span.ruble Р] за штуку
+
+		
+
+		.container.constructor-aromas.constructor__no-pd-480
+			-for(var i=0; i<3; i++)
+				.constructor-aromas__column
+					-for(var n=0; n<7; n++)
+						.constructor-aromas__row
+							.constructor-aromas__icon
+								img(src="img/constructor-forms/antitabak-01.svg", alt="alt")
+							.constructor-aromas__name Антитабак
+							//- .constructor-aromas__list
+							select.constructor-select(name="")
+								option(value="") 100 шт.
+								option(value="") 1 000 шт.
+								option(value="") 10 000 шт.
+
+
+
+		.container.constructor__bottom-buttons
+			a(href="#").button-constr.button-constr--gray.button--constr-bottom.step-to-backward Вернуться на шаг назад
+			a(href="#").button-constr.button-constr--accent.button--constr-bottom.step-to-forward Выбрать количество и стоимость
+
+block myscripts
+	//- script(src="js/libs/TweenMax.min.js")
+
+

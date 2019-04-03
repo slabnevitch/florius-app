@@ -1,0 +1,29 @@
+.guarantee{
+	h2{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}
+.guarantee-item{
+	@extend .how-to-order__item;
+	@include col-4();
+	@include col-md-6();
+	@include col-sm-12();
+	header{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: flex-start;
+	}
+	.icon{
+			font-size: 40px;
+			color: $green;
+			margin-right: 20px;
+			flex-shrink: 0;
+	}
+}
+.guarantee-item__title{
+	@extend .how-to-order__title;
+}

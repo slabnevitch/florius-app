@@ -1,0 +1,91 @@
+.fabrication{
+	h2{
+		letter-spacing: -1.3px;
+	}
+	&-left{
+		@include col();
+		@include col-8();
+		@include col-lg-7();
+		@include col-md-12();
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 8px;
+
+		img{
+			max-width: 100%;
+		}
+	}
+	&-right{
+		@include col();
+		@include col-4();
+		@include col-lg-5();
+		@include col-md-12();
+	}
+}
+.fabrication-slider{
+	.slick-dots{
+		bottom: -12px;
+		border: none;
+
+		li.slick-active button{
+			background-color: green;
+		}
+	}
+}
+.fabrication-slide{
+	padding-bottom: 66%;
+	background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 8px;
+}
+.fabrication-item{
+	padding: 8px 25px 8px 100px;
+	min-height: 86px;
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	position: relative;	
+
+	border: 2px solid $line-gray;
+	border-radius: 8px;
+
+	.icon{
+		font-size: 60px;
+		color: $green;
+			@include absolute-center;
+			right: auto;
+			left: 20px;
+			left: 20px;		
+
+		&-ribbon{
+			// font-size: 120px;
+			line-height: 120px;	
+		}
+		&-forms{
+			font-size: 50px;
+		}
+		&-aroma{
+			font-size: 55px;
+		}
+	}
+	.fabrication-item__text{
+		// margin-left: 25px;
+		font-family: $rob-r;
+		font-size: 15.5px;
+		color: $sect-title;
+	}
+
+	&:last-child{
+		margin-bottom: 0;
+		padding-right: 5px;
+	}
+	&:first-child{
+		padding-right: 50px;
+	}
+}

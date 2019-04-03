@@ -1,0 +1,84 @@
+section.forms
+	.container
+		.title-wrapper
+			h2 Формы
+			p.sect-descr
+				| За 15 лет работы мы изготовили огромное количество форм для ароматизаторов. Среди более 1500 готовых вариантов вы сможете найти
+				br 
+				| подходящий именно вам. А если у вас есть своя уникальная идея, мы обязательно воплотим её в жизнь!
+
+	.container.no-paddings
+		ul.tabs__list.forms__tabs-list
+			li.tabs__item.tabs__item--active
+				a.tabs__link(href='#item1') прямоугольные формы
+			li.tabs__item
+				a.tabs__link(href='#item2') машины
+			li.tabs__item
+				a.tabs__link(href='#item3') деревья
+			li.tabs__item
+				a.tabs__link(href='#item4') круглые формы
+		
+	.container.no-paddings
+		ul.tabs__content.forms__tabs-content
+			li#item1.tabs__item.forms-slider.forms-slider--rectangles
+				.forms-slider__slide
+					img(src="img/forms/form-1.jpg", alt="alt")
+
+				.forms-slider__slide
+					img(src="img/forms/form-2.jpg", alt="alt")
+
+				.forms-slider__slide
+					img(src="img/forms/form-1.jpg", alt="alt")
+
+				.forms-slider__slide
+					img(src="img/forms/form-2.jpg", alt="alt")
+
+				.forms-slider__slide
+					img(src="img/forms/form-1.jpg", alt="alt")
+
+				.forms-slider__slide
+					img(src="img/forms/form-2.jpg", alt="alt")
+				
+			li#item2.tabs__item.hidden.forms-slider.forms-slider--cars
+				- for(var i=0; i<6; i++)
+					.forms-slider__slide
+						img(src="img/forms/form-1.jpg", alt="alt")
+
+			li#item3.tabs__item.hidden.forms-slider.forms-slider--trees
+				- for(var i=0; i<6; i++)
+					.forms-slider__slide
+						img(src="img/forms/form-1.jpg", alt="alt")
+
+			li#item4.tabs__item.hidden.forms-slider.forms-slider--rounds
+				- for(var i=0; i<6; i++)
+					.forms-slider__slide
+						img(src="img/forms/form-1.jpg", alt="alt")
+	
+	.container.forms-download
+		a(href="#").button.button--yellow.button--bold Скачать #[span прямоугольные формы]
+
+	.container.forms-download-all
+		a(href="#").button.button--yellow.button--bold Скачать все формы
+		a(href="#").button.button--bold.button--yellow Технические требования
+			br
+			| к макетам
+
+	.container.no-paddings.forms-nothing
+		.forms-nothing__title
+			p Ничего не подошло?
+			div Сделаем индивидуальную форму!
+
+		form.forms-nothing__form
+			label
+				span Ваше имя
+				input(type="text")
+
+			label
+				span Телефон или e-mail
+				input(type="text")
+
+			button.button.button--grad.button--bold.button--animated(type="submit") Оставить заявку
+
+			p
+				| Оставляя свои персональные данные, Вы соглашаетесь с Политикой конфиденциальности.
+

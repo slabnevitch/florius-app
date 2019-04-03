@@ -1,0 +1,51 @@
+header.header
+		
+	.header-top
+		.container
+				nav
+					- var topMenu = ['Доставка и оплата', 'Гарантии', 'О компании', 'Портфолио', 'Обратная связь', 'Как заказать'];
+					each val in topMenu
+						a(href="#")= val
+
+				.header-lang
+					a(href="#").header-lang__active Ru
+					a(href="") En
+
+				a(href="#callback-form").button.button--green.button--empty.button--bold.button-popup Обратный звонок
+
+	.container.header-middle
+		.header-logo
+			img.header-logo__noscroll(src="img/florius-logo-244x85.png", alt="alt")
+			//- img.header-logo__scroll(src="img/logo-mob.jpg", alt="alt")
+			img.header-logo__scroll(src="img/logo-scroll.png", alt="alt")
+
+		.header-descr
+			| Российское производство автомобильных 
+			div ароматизаторов#[span , продажа готовых и на заказ]
+
+		.header-contacts
+			.loc-list
+				span(data-tooltip-content="#loc-tooltip_content").loc-tooltip Санкт-Петербург
+					+icon('chev-down')
+
+			.header-phones
+				div 8 800 234 54 65
+				div +7 495 798 2808
+
+			p По будням с 9:00 до 18:00
+
+
+	.header-yellow.header-yellow--constructor
+		.container
+			
+			a.toggle-mnu(href="#")
+				span
+	
+			.constructor-steps
+				block steps
+
+		
+
+
+
+

@@ -1,0 +1,26 @@
+section.questions
+	.container
+		h2.text-left Остались вопросы
+	.container
+		.questions__left
+			form.questions-form(action="#")
+				label
+					span Ваше имя
+					input(type="text", name="name")
+				label
+					span Телефон или e-mail
+					input(type="text", name="phone/email")
+				label.questions-form__message
+					span Ваш вопрос
+					textarea(name="message", cols="30", rows="10")
+				
+				.button-wrap
+					button.button.button--animated(type="submit") Отправить вопрос 
+
+		.questions__right
+			.questions-manager
+				span Светлана
+					br
+					| Чутова
+				p На ваши вопросы ответит менеджер отдела продаж
+			img(src="img/collective/chutova.png", alt="alt")

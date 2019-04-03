@@ -1,0 +1,85 @@
+extends _misc/main-constructor
+
+block title
+	| Конструктор шаг-6
+
+block steps
+	a(href="#").constructor-step.constructor-step--completed.constructor-step--completed-first
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('forms-select')
+		.constructor-step__name Выбор 
+			br
+			| формы
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--completed
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('image')
+		.constructor-step__name Работа
+			br
+			| с макетом
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--completed
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('budget')
+		.constructor-step__name Количество, 
+			br
+			| стоимость
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--completed
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('parfume')
+		.constructor-step__name Выбор 
+			br
+			| ароматов 
+		.constructor-step__arrow
+			+icon('constr-arrow')
+	
+	a(href="#").constructor-step.constructor-step--completed.constructor-step--completed-last
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('shopping-form')
+		.constructor-step__name Корзина 
+			br
+			| заказов
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--current
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('bill')
+		.constructor-step__name Оформление 
+			br
+			| заказа
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+block content
+	.constructor__step.constructor__step-5
+		.container
+			.title-wrapper
+				h1 Заголовок
+
+
+		.container.constructor__bottom-buttons
+			a(href="#").button-constr.button-constr--gray.button--constr-bottom.step-to-backward Вернуться на шаг назад
+			a(href="#").button-constr.button-constr--accent.button--constr-bottom.step-to-forward Выбрать количество и стоимость
+
+
+

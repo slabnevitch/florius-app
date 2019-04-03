@@ -1,0 +1,31 @@
+section.map
+	.container
+		.title-wrapper
+			h2 Бесплатная доставка по РФ
+				br
+				| Доступная доставка по ЕвраЗЭС
+				
+				.map-info(title="<div class='info-tip-inner'>При сумме заказа от 20 000 <span class='ruble'>Р</span></div>")
+					+icon('info')
+
+	.container.rel
+		.map-left
+			.map-legend
+				.map-legend__item
+					img(src="img/icons/baloon-green-sm.png", alt="alt").map-legend__icon
+					span Наши дилеры
+
+				.map-legend__item
+					img(src="img/icons/baloon-yellow-sm.png", alt="alt").map-legend__icon
+					span Наши клиенты
+
+			.map-regard
+				span Более
+				span.map-regard__big 30 000
+				span довольных клиентов
+
+		.map-right
+			.map-right__inner
+				img.map-img(src="img/map2.jpg", alt="alt")
+				- for(var i=0; i<8; i++)
+					.map-marker.tooltip(data-tooltip-content="#map-tooltip_content")

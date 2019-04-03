@@ -1,0 +1,206 @@
+extends _misc/main-constructor
+
+block title
+	| Конструктор шаг-2
+
+block steps
+	a(href="#").constructor-step.constructor-step--completed.constructor-step--brs
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('forms-select')
+		.constructor-step__name Выбор 
+			br
+			| формы
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step.constructor-step--current
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('image')
+		.constructor-step__name Работа 
+			br
+			| с макетом
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('budget')
+		.constructor-step__name Количество, 
+			br
+			| стоимость
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('parfume')
+		.constructor-step__name Выбор 
+			br
+			| ароматов 
+		.constructor-step__arrow
+			+icon('constr-arrow')
+	
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('shopping-form')
+		.constructor-step__name Корзина 
+			br
+			| заказов
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+	a(href="#").constructor-step
+		.constructor-step__arrow.constructor-step__arrow--to-back
+			+icon('constr-arrow')
+		.constructor-step__icon
+			+icon('bill')
+		.constructor-step__name Оформление 
+			br
+			| заказа
+		.constructor-step__arrow
+			+icon('constr-arrow')
+
+block content
+	.constructor__step.constructor__step-2
+		.container.constructor-layouts.constructor__no-pd-480
+			.constructor-layout.constructor-layout--front.active
+				.constructor-edit
+					.button-constr.button-constr--accent.constructor-text-add Добавить текст
+					.constructor-edit__editor
+						.constructor-edit__left
+							.constructor-edit__font-family Roboto
+							
+							.constructor-edit__font-size
+								.constructor-edit__font-value 10 pt
+							
+							.constructor-edit__font-color
+								.constructor-edit__color-sample
+
+						.constructor-edit__right
+							.constructor-edit__font-weight
+								+icon('fon-bold')
+							
+							.constructor-edit__font-style
+								+icon('font-italic')
+							
+							.constructor-edit__align
+								.constructor-edit__align-left.active
+									+icon('align-left')
+								.constructor-edit__align-center
+									+icon('align-center')
+								.constructor-edit__align-right
+									+icon('align-right')
+
+				
+				.constructor-layout__title 1 Сторона
+				.constructor-layout__display
+					.constructor-layout__image.constructor-image-tooltip(title="<div class='constructor-image-tooltip__text'> Обратите внимание, что не нужно доходить до края формы на 2 мм. <div>Это необходимо на этапе вырубки.</div></div>")
+						img.constructor-layout__loaded-img(src="img/constructor-forms/vector.jpg", alt="alt")
+						img.constructor-layout__image-mask(src="img/constructor-forms/romb.png", alt="alt")
+						
+					.constructor-layout__label
+						input.constructor-input(type="text", name="" placeholder="Ваш текст")
+						.constructor-layout__handler-icon.constructor-rotate
+							+icon('rotate')
+						.constructor-layout__handler-icon.constructor-delete
+							+icon('constr-close')
+
+					.constructor-layout__handler-icon.constructor-rotate
+						+icon('rotate')
+					.constructor-layout__handler-icon.constructor-delete.constructor-del-img
+						+icon('constr-close')
+
+				label.constructor-layout__file
+					input(type="file", name="")
+					span.button-constr.button-constr--green Загрузить изображение
+
+				.constructor-layout__buttons
+					.constructor-layout__button.constructor-layout__to-front.constr-tooltip-button(title="На передний план")
+						+icon('up-arrow')
+					.constructor-layout__button.constructor-layout__to-back.constr-tooltip-button(title="На задний план")
+						+icon('down-arrow')
+					.constructor-layout__button.constr-tooltip-button.constructor-layout__del(title="Удалить")
+						+icon('close-main')
+					.constructor-layout__button.constr-tooltip-button.constructor-layout__backward(title="Вернуть назад")
+						+icon('forward-arrow')
+
+			.constructor-layout-center
+				.constructor-layout__button.constr-tooltip-button#toggle-side(title="Копировать на<br> другую сторону")
+						+icon('clipboard')
+
+			.constructor-layout.constructor-layout--back
+				.constructor-edit
+					.button-constr.button-constr--accent.constructor-text-add Добавить текст
+					.constructor-edit__editor
+						.constructor-edit__left
+							.constructor-edit__font-family Roboto
+							
+							.constructor-edit__font-size
+								.constructor-edit__font-value 10 pt
+							
+							.constructor-edit__font-color
+								.constructor-edit__color-sample
+
+						.constructor-edit__right
+							.constructor-edit__font-weight
+								+icon('fon-bold')
+							
+							.constructor-edit__font-style
+								+icon('font-italic')
+							
+							.constructor-edit__align
+								.constructor-edit__align-left.active
+									+icon('align-left')
+								.constructor-edit__align-center
+									+icon('align-center')
+								.constructor-edit__align-right
+									+icon('align-right')
+				
+				.constructor-layout__title 1 Сторона
+				.constructor-layout__display
+					.constructor-layout__image.constructor-image-tooltip(title="<div class='constructor-image-tooltip__text'> Обратите внимание, что не нужно доходить до края формы на 2 мм. <div>Это необходимо на этапе вырубки.</div></div>")
+
+						img.constructor-layout__image-mask(src="img/constructor-forms/romb.png", alt="alt")
+						
+					.constructor-layout__label
+						input.constructor-input(type="text", name="" placeholder="Ваш текст")
+						.constructor-layout__handler-icon.constructor-rotate
+							+icon('rotate')
+						.constructor-layout__handler-icon.constructor-delete
+							+icon('constr-close')
+
+					.constructor-layout__handler-icon.constructor-rotate
+						+icon('rotate')
+					.constructor-layout__handler-icon.constructor-delete.constructor-del-img
+						+icon('constr-close')
+
+				label.constructor-layout__file
+					input(type="file", name="")
+					span.button-constr.button-constr--green Загрузить изображение
+
+				.constructor-layout__buttons
+					.constructor-layout__button.constructor-layout__to-front.constr-tooltip-button(title="На передний план")
+						+icon('up-arrow')
+					.constructor-layout__button.constructor-layout__to-back.constr-tooltip-button(title="На задний план")
+						+icon('down-arrow')
+					.constructor-layout__button.constr-tooltip-button.constructor-layout__del(title="Удалить")
+						+icon('close-main')
+					.constructor-layout__button.constr-tooltip-button.constructor-layout__backward(title="Вернуть назад")
+						+icon('forward-arrow')
+
+		.container.constructor__bottom-buttons.constructor__no-pd-480
+			a(href="#").button-constr.button-constr--gray.button--constr-bottom.step-to-backward Вернуться на шаг назад
+			a(href="#").button-constr.button-constr--accent.button--constr-bottom.step-to-forward Выбрать количество и стоимость
+
+
+

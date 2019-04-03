@@ -1,0 +1,94 @@
+extends _misc/main
+
+block title
+	| CTM
+
+block content
+	section.air-ctm
+		.container
+			.title-wrapper
+				h2 Ароматизаторы Собственная Торговая Марка
+				p.text-center
+					| Освежители воздуха для автомобиля с собственной торговой маркой (СТМ) – отличный способ расширения вашего ассортимента. С его помощью, вы
+					br
+					| увеличите линейку товаров под собственным логотипом и свою прибыль. Повысите узнаваемость своего бренда за счет качественных и недорогих
+					br
+					| товаров – автомобильных ароматизаторов с вашей собственной торговой маркой стоимостью от 8 рублей.
+
+		.container
+			.air-ctm__slider
+				.air-ctm__slide
+					img(src="img/products/prod-stm-1.jpg", alt="alt")
+
+				.air-ctm__slide
+					img(src="img/products/prod-stm-2.jpg", alt="alt")
+
+				.air-ctm__slide
+					img(src="img/products/prod-stm-3.jpg", alt="alt")
+
+				.air-ctm__slide
+					img(src="img/products/prod-stm-4.jpg", alt="alt")
+
+				.air-ctm__slide
+					img(src="img/products/prod-stm-5.jpg", alt="alt")
+				.air-ctm__slide
+					img(src="img/products/prod-stm-5.jpg", alt="alt")
+
+	include _sections/_price-term
+	include _sections/_aromas
+	include _sections/_how-to-order
+	section.docs.lined
+		.container
+			.title-wrapper
+				h2 Наша продукция имеет всю необходимую документацию,
+					br
+					| а наши разработки защищены патентами.
+
+				p.sect-descr
+					| Мы уважаем своих клиентов и соблюдаем закон, поэтому открыто предоставляем всю необходимую информацию, касающуюся качества и безопасности ароматизаторов в машину, которые вы приобретаете. Кроме того, мы обладаем уникальными авторскими правами на изготовление автомобильных ароматизаторов с логотипом. Вы не только можете быть абсолютно уверены в высоком качестве и безопасности освежителя для машины, но и совершенно спокойно предлагать этот товар своим клиентам. 
+
+		.container
+			.docs-left
+				img(src="img/docs/doc-2.png", alt="alt")
+				img(src="img/docs/doc-3.png", alt="alt")
+				//- img(src="img/docs/doc-4.png", alt="alt")
+				span Разрешающая документация
+
+				.docs-left__button-wrap
+					a(href="#").button.button--yellow.button--bold Скачать
+			
+			.docs-right
+				.docs-slider
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+					.docs-slider__slide
+						img(src="img/docs/doc-1.png", alt="alt")
+				span Патенты
+		
+	section.docs-reasons
+		.container.no-paddings
+			.title-wrapper
+				h2 У вас есть по меньшей мере
+					br
+					| 6 причин для сотрудничества с нами
+		.container.no-paddings
+			- var reasons = ['Самое оптимальное соотношение цены и качества на современном рынке', 'Кратчайшие сроки изготовления ваших автоароматизаторов с логотипом на заказ', 'Возможность создания вместе с нами уникального продукта, презентующего вашу марку', 'Гарантированная безопасность и качество продукта, подтвержденные документально', 'Практически неограниченный объем заказа', 'Широкий выбор готовых освежителей для машины с логотипом'];
+			each val in reasons
+				.docs-reasons__item
+					.docs-reasons__icon
+						+icon('checkmark')
+					p= val
+
+
+	
+	include _sections/_guarantee-gray
+	include _sections/_delivery-features
+	include _sections/_management
+	include _sections/_collective-no-side
+	include _sections/_fabrication-no-side
+	include _sections/_reviews
+	include _sections/_overal-questions

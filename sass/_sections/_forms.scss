@@ -1,0 +1,155 @@
+.forms__tabs-list,
+.forms__tabs-content{
+	@include col();
+	@include col-12();
+}
+.forms__tabs-list{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;	
+	margin-bottom: 45px;
+	padding-left: 39px;
+
+	border-bottom: 1px solid #DADADA;
+
+
+	.tabs__link{
+		padding: 4px 19px;
+		background-color: #fff;
+		font-size: 22px;
+		color: $sect-title;
+		text-transform: uppercase;
+		text-decoration: none;
+		border: 1px solid transparent;	
+
+				border-bottom-color: #DADADA;
+	}
+	.tabs__item{
+		position: relative;
+		top: -4px;	
+		&--active{
+			.tabs__link{
+				border-color: #DADADA;
+				border-bottom-color: transparent	;
+			}
+		}
+	}
+	
+}
+.forms-slider{
+	.slick-dots{
+		display: none !important;	
+	}
+}
+.forms-slider__slide{
+@extend .portfolio-slide;
+	
+}
+.forms-download{
+	justify-content: center;
+	padding-bottom: 45px;
+	border-bottom: 1px solid $line-gray;
+	// a{
+	// 	padding-top: 7px;
+	// 	padding-bottom: 7px;
+	// 	font-size: 13px;
+	// 	font-family: $rob-b;
+	// 	color: #2f3335;
+	// 	text-decoration: none;
+	// }
+}
+.forms-download-all{
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 60px;
+
+	.button{
+		display: table;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		margin: 0 15px;
+		
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 44px;
+
+		// span{
+		// 	display: table-cell;
+		// vertical-align: middle;
+		// }
+
+		&:nth-child(2){
+			font-size: 15px;
+			line-height: 17px;
+
+		}
+
+	}
+}
+.forms-nothing__title{
+	@include col();
+	@include col-5();
+	@include col-md-12();
+	
+	font-size: 26px;
+	p{
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
+	div{
+		font-family: $rob-b;
+		color: $green;
+	}
+}
+.forms-nothing__form{
+	@include col();
+	@include col-7();
+	@include col-md-12();
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+
+	label{
+		flex-grow: 1;
+		margin-right: 30px;
+
+		span{
+			display: block;
+			margin-bottom: 9px;
+			color: #b4b4b4;
+		}
+
+		input{
+			display: block;
+			width: 100%;
+			padding: 0 15px;
+			height: 45px;
+			line-height: 45px;
+			border: 1px solid #E2E2E1;
+			border-radius: 4px;
+		}
+	}
+	.button{
+		padding: 14px 24px;
+		cursor: pointer;
+	}
+
+	p{
+
+		width: 100%;
+		color: #b4b4b4;
+	}
+}
